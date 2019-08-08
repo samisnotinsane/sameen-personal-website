@@ -11,6 +11,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -46,6 +47,6 @@ import { HeaderComponent } from './shared/header/header.component';
 })
 export class AppModule { 
   constructor() {
-    library.add(faGithub, faLinkedinIn, faTwitter, faEnvelope);
+    library.add(faGithub, faLinkedinIn, faTwitter, faEnvelope, faLaptopCode);
   }
 }
