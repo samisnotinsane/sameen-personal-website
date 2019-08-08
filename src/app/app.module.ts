@@ -7,13 +7,15 @@ import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolb
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { SkillComponent } from './skill/skill.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
