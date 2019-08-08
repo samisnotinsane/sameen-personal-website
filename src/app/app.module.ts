@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SkillComponent } from './skill/skill.component';
+import { InterestComponent } from './interest/interest.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SkillComponent } from './skill/skill.component';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    SkillComponent
+    SkillComponent,
+    InterestComponent
   ],
   imports: [
     BrowserModule,
