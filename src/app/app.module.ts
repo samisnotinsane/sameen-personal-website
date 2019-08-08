@@ -24,6 +24,9 @@ import { HeroComponent } from './hero/hero.component';
 import { FrontendComponent } from './skill/frontend/frontend.component';
 import { BackendComponent } from './skill/backend/backend.component';
 import { BigdataComponent } from './skill/bigdata/bigdata.component';
+import { DatabaseComponent } from './skill/database/database.component';
+import { RoboticsComponent } from './skill/robotics/robotics.component';
+import { GameComponent } from './skill/game/game.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { BigdataComponent } from './skill/bigdata/bigdata.component';
     HeroComponent,
     FrontendComponent,
     BackendComponent,
-    BigdataComponent
+    BigdataComponent,
+    DatabaseComponent,
+    RoboticsComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
