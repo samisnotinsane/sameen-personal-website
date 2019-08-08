@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { SkillComponent } from './skill/skill.component';
 import { InterestComponent } from './interest/interest.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     SkillComponent,
     InterestComponent,
-    ContactComponent
+    ContactComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
