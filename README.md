@@ -1,5 +1,7 @@
 # SameenPersonalWebsite
 
+[![CircleCI](https://circleci.com/gh/samisnotinsane/sameen-personal-website.svg?style=svg)](https://circleci.com/gh/samisnotinsane/sameen-personal-website)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
 ## Development server
