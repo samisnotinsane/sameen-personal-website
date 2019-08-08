@@ -10,10 +10,14 @@
         </div>
         <span class="fill-remaining-space"></span>
         <div>
-            <a mat-icon-button>GitHub</a>
-            <a mat-icon-button>LinkedIn</a>
-            <a mat-icon-button>Twitter</a>
-            <a mat-icon-button>Email</a>
+            <a mat-icon-button>
+                <fa-icon [icon]="['fab', 'github']"></fa-icon>
+            </a>
+            <a mat-icon-button>
+                <fa-icon [icon]="['fab', 'linkedin-in']"></fa-icon>
+            </a>
+            <a mat-button>Twitter</a>
+            <a mat-button>Email</a>
         </div>
     </mat-toolbar-row>
 </mat-toolbar>

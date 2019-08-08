@@ -4,6 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -11,7 +17,6 @@ import { SkillComponent } from './skill/skill.component';
 import { InterestComponent } from './interest/interest.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './shared/header/header.component';
-
 
 @NgModule({
   declarations: [
@@ -26,6 +31,7 @@ import { HeaderComponent } from './shared/header/header.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     MatButtonModule,
     MatCardModule,
     MatInputModule,
@@ -36,4 +42,8 @@ import { HeaderComponent } from './shared/header/header.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor() {
+    library.add(faGithub, faLinkedinIn);
+  }
+}
