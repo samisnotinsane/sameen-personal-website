@@ -20,6 +20,7 @@ import { SkillComponent } from './skill/skill.component';
 import { InterestComponent } from './interest/interest.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HeaderComponent } from './shared/header/header.component';
     SkillComponent,
     InterestComponent,
     ContactComponent,
-    HeaderComponent
+    HeaderComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
