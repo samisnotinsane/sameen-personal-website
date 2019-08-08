@@ -21,6 +21,8 @@ import { InterestComponent } from './interest/interest.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { HeroComponent } from './hero/hero.component';
+import { FrontendComponent } from './skill/frontend/frontend.component';
+import { BackendComponent } from './skill/backend/backend.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { HeroComponent } from './hero/hero.component';
     InterestComponent,
     ContactComponent,
     HeaderComponent,
-    HeroComponent
+    HeroComponent,
+    FrontendComponent,
+    BackendComponent
   ],
   imports: [
     BrowserModule,
