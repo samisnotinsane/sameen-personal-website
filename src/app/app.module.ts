@@ -23,6 +23,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { FrontendComponent } from './skill/frontend/frontend.component';
 import { BackendComponent } from './skill/backend/backend.component';
+import { BigdataComponent } from './skill/bigdata/bigdata.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { BackendComponent } from './skill/backend/backend.component';
     HeaderComponent,
     HeroComponent,
     FrontendComponent,
-    BackendComponent
+    BackendComponent,
+    BigdataComponent
   ],
   imports: [
     BrowserModule,

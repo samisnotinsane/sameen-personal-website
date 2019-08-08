@@ -1,21 +1,32 @@
 .container {
+    position: relative;
     width: 90%;
     height: 50%;
     background: aqua;
     margin: auto;
-    padding: 50px;
+    /* padding: 50px; */
 }
-
 .frontend-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     width: 15%;
     height: 200px;
-    background: red;
-    float: left;
+    border: 3px solid red;
 }
-
 .backend-container {
-    margin-left: 20%;
-    height: 200px;
+    position: absolute;
+    top: 20px;
+    left: 275px;
     width: 15%;
-    background: red;
+    height: 200px;
+    border: 3px solid red;
+}
+.bigdata-container {
+    position: absolute;
+    top: 20px;
+    left: 525px;
+    width: 15%;
+    height: 200px;
+    border: 3px solid red;
 }
