@@ -1,13 +1,19 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
         <h1>{{ title }}</h1>
-        <span class="fill-remaining-space"></span>
         <div>
             <a mat-button [routerLink]="'/home'">Home</a>
             <a mat-button [routerLink]="'/about'">About</a>
             <a mat-button [routerLink]="'/skills'">Skills</a>
             <a mat-button [routerLink]="'/interests'">Interests</a>
             <a mat-button [routerLink]="'/contact'">Contact</a>
+        </div>
+        <span class="fill-remaining-space"></span>
+        <div>
+            <a mat-icon-button>GitHub</a>
+            <a mat-icon-button>LinkedIn</a>
+            <a mat-icon-button>Twitter</a>
+            <a mat-icon-button>Email</a>
         </div>
     </mat-toolbar-row>
 </mat-toolbar>
