@@ -30,3 +30,19 @@
     height: 200px;
     border: 3px solid red;
 }
+.database-container {
+    position: absolute;
+    top: 20px;
+    left: 780px;
+    width: 15%;
+    height: 200px;
+    border: 3px solid red;
+}
+.robotics-container {
+    position: absolute;
+    top: 20px;
+    left: 1025px;
+    width: 15%;
+    height: 200px;
+    border: 3px solid red;
+}
