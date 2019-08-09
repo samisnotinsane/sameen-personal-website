@@ -1,1 +1,51 @@
-<p>contact works!</p>
+<form autocomplete="off">
+    <div class="row">
+        <div class="col-25">
+            <label for="name">
+                Name
+            </label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="e.g. John Smith">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="phone">
+                Phone
+            </label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="phone" name="phone" placeholder="e.g. +447 533 125489">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="email">
+                Email
+            </label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="e.g. john.smith@xyz.co.uk">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="message">
+                Message
+            </label>
+        </div>
+        <div class="col-75">
+            <textarea id="message" name="message" placeholder="Your message..." style="height:200px;"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <p></p>
+        </div>
+        <div class="col-75">
+            <a mat-flat-button color="primary">Submit</a>
+            <p>Your message has been sent!</p>
+        </div>
+    </div>
+</form>
