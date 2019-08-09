@@ -1,6 +1,9 @@
 # SameenPersonalWebsite
 
 [![CircleCI](https://circleci.com/gh/samisnotinsane/sameen-personal-website.svg?style=svg)](https://circleci.com/gh/samisnotinsane/sameen-personal-website)
+[![NPM version](https://badge.fury.io/js/badge-list.svg)](http://badge.fury.io/js/badge-list)
+[![codebeat badge](https://codebeat.co/badges/208743b3-4f28-4ed7-935f-bfd6d20d9287)](https://codebeat.co/projects/github-com-samisnotinsane-sameen-personal-website-master)
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
