@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
 import { FrontendComponent } from './frontend.component';
+
 
 describe('FrontendComponent', () => {
   let component: FrontendComponent;
@@ -8,7 +9,14 @@ describe('FrontendComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FrontendComponent ]
+      declarations: [ 
+        FrontendComponent,
+        MatButtonModule,
+        MatCardModule, 
+        MatInputModule, 
+        MatListModule, 
+        MatToolbarModule
+        ]
     })
     .compileComponents();
   }));

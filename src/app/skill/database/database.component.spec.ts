@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
 import { DatabaseComponent } from './database.component';
 
 describe('DatabaseComponent', () => {
@@ -8,7 +8,9 @@ describe('DatabaseComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DatabaseComponent ]
+      declarations: [ 
+        DatabaseComponent
+      ]
     })
     .compileComponents();
   }));

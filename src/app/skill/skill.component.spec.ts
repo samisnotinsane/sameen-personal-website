@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
 import { SkillComponent } from './skill.component';
 
 describe('SkillComponent', () => {
@@ -8,7 +8,14 @@ describe('SkillComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SkillComponent ]
+      declarations: [
+        SkillComponent,
+        MatButtonModule,
+        MatCardModule, 
+        MatInputModule, 
+        MatListModule, 
+        MatToolbarModule
+        ]
     })
     .compileComponents();
   }));
