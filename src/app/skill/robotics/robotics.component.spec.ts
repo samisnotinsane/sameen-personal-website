@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RoboticsComponent } from './robotics.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('RoboticsComponent', () => {
   let component: RoboticsComponent;
@@ -8,7 +9,8 @@ describe('RoboticsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RoboticsComponent ]
+      declarations: [ RoboticsComponent ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DatabaseComponent } from './database.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('DatabaseComponent', () => {
   let component: DatabaseComponent;
@@ -8,7 +9,10 @@ describe('DatabaseComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DatabaseComponent ]
+      declarations: [ 
+        DatabaseComponent
+      ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
