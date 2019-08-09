@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
-import { FrontendComponent } from './frontend.component';
 
+import { FrontendComponent } from './frontend.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('FrontendComponent', () => {
   let component: FrontendComponent;
@@ -10,13 +10,9 @@ describe('FrontendComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ 
-        FrontendComponent,
-        MatButtonModule,
-        MatCardModule, 
-        MatInputModule, 
-        MatListModule, 
-        MatToolbarModule
-        ]
+        FrontendComponent
+      ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BigdataComponent } from './bigdata.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('BigdataComponent', () => {
   let component: BigdataComponent;
@@ -8,7 +9,10 @@ describe('BigdataComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BigdataComponent ]
+      declarations: [ 
+        BigdataComponent
+      ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));

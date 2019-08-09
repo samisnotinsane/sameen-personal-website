@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
+
 import { SkillComponent } from './skill.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('SkillComponent', () => {
   let component: SkillComponent;
@@ -10,12 +11,8 @@ describe('SkillComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         SkillComponent,
-        MatButtonModule,
-        MatCardModule, 
-        MatInputModule, 
-        MatListModule, 
-        MatToolbarModule
-        ]
+        ],
+        schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));

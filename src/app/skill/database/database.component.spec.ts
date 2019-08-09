@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
+
 import { DatabaseComponent } from './database.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('DatabaseComponent', () => {
   let component: DatabaseComponent;
@@ -10,7 +11,8 @@ describe('DatabaseComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ 
         DatabaseComponent
-      ]
+      ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
