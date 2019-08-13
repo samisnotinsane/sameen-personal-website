@@ -1,1 +1,74 @@
-<p>contact works!</p>
+<form (ngSubmit)="onSubmit()" #visitorForm="ngForm" class="form-group" autocomplete="off">
+    <div class="row">
+        <div class="col-25">
+            <label for="name">
+                Name
+            </label>
+        </div>
+        <div class="col-75">
+                <input type="text" class="form-control" id="name"
+                required
+                [(ngModel)]="model.name" name="name"
+                #name="ngModel"
+                placeholder="e.g. John Smith">
+                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    Name is required
+                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="phone">
+                Phone
+            </label>
+        </div>
+        <div class="col-75">
+            <input type="text" class="form-control" id="phone" 
+            [(ngModel)]="model.phone" name="phone"
+            placeholder="e.g. +447 533 125489">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="email">
+                Email
+            </label>
+        </div>
+        <div class="col-75">
+            <input type="text" class="form-control" id="email"
+            [(ngModel)]="model.email" name="email"
+            #email="ngModel"
+            placeholder="e.g. john.smith@xyz.co.uk">
+            <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+                Invalid email address
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="message">
+                Message
+            </label>
+        </div>
+        <div class="col-75">
+            <textarea class="form-control" id="message" 
+            [(ngModel)]="model.message" name="message"
+            #message="ngModel" 
+            placeholder="Your message..."
+            style="height:200px;"></textarea>
+            <div [hidden]="message.valid || message.pristine" class="alert alert-danger">
+                Message body required
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <p></p>
+        </div>
+        <div class="col-75">
+            <button type="submit" class="btn btn-primary" [disabled]="!visitorForm.form.valid"
+            (click)="newVisitorMessage(); visitorForm.reset()">Send</button>
+            <p>Your message has been sent!</p>
+        </div>
+    </div>
+</form>

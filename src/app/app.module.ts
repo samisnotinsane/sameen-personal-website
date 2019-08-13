@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
 
@@ -45,7 +46,7 @@ import { GameComponent } from './skill/game/game.component';
     BigdataComponent,
     DatabaseComponent,
     RoboticsComponent,
-    GameComponent
+    GameComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +57,8 @@ import { GameComponent } from './skill/game/game.component';
     MatInputModule,
     MatListModule,
     MatToolbarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
