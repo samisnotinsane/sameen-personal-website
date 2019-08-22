@@ -30,6 +30,7 @@ import { BigdataComponent } from './skill/bigdata/bigdata.component';
 import { DatabaseComponent } from './skill/database/database.component';
 import { RoboticsComponent } from './skill/robotics/robotics.component';
 import { GameComponent } from './skill/game/game.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { GameComponent } from './skill/game/game.component';
     DatabaseComponent,
     RoboticsComponent,
     GameComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
